@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazri Website</title>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="titles"><a href="/">Nazri</a></div>
+        <!-- menu link a css
+        active = menu li a : .active-link
+        nonactive = menu li a : null -->
+        <div class="menu">
+            <ul class="menu-desk">
+                <li><a href="/" class="active-link">Home</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#" onclick="soonAlert()">Github</a></li>
+            </ul>
+            <div class="menu-mobile" open="t">
+                <i class='bxr  bx-x'></i>
+                <i class='bxr  bx-menu'></i>  
+                
+                <div class="ham-menu">
+                    <ul class="">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#" onclick="soonAlert()">Github</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="img-card">
+            <img src="profil.png" alt="Nazri Photo">
+        </div>
+        <div class="name-card">
+            <div class="card">
+                <h3>Hi, My name is</h3>
+                <h2></h2>
+                <h4>Full Stack Developer (Nantinya)</h4>
+            </div>
+        </div>
+        <main>
+            <div class="project">
+                <h3 id="project">Project</h3>
+                <div class="box">
+                    <div class="card-box">
+                        <div>
+                            <h2>Mini Games</h2>
+                            <p>Pemrograman: PHP HTML JS</p>
+                            <p>Fitur: (MANIPULASI, POIN SISTEM)</p>
+                            <p>Deskripsi: Mini games dengan code by chat gpt 80%</p>
+                        </div>
+                        <button onclick="openLink('https://nazri.rf.gd/judal')" class="card-box-button">PLAY</button>
+                    </div>
+                    <div class="card-box">
+                        <div>
+                            <h2>Tic Tac Toe Game</h2>
+                            <p>Pemrograman: PHP</p>
+                            <p>Fitur: (Main sendiri, Main dengan teman)</p>
+                            <p>Deskripsi: 95% buatan gw ya, cuman buat heve fun oke!</p>
+                        </div>
+                        <button onclick="openLink('https://nazri.rf.gd/tic-tac-toe')" class="card-box-button">PLAY</button>
+                    </div>
+                    <div class="card-box">
+                        <div>
+                            <h2>Absensi Laravel 12</h2>
+                            <p>Pemrograman: PHP</p>
+                            <p>Fitur: (QR CODE, GPS, LOGIN ROLE)</p>
+                            <p>Deskripsi: Absensi berbasis laravel dengan QR CODE</p>
+                        </div>
+                        <button onclick="soonAlert()" class="card-box-button">DEMO</button>
+                    </div>
+                    <div class="card-box">
+                        <div>
+                            <h2>DRONE KAMIKAZE</h2>
+                            <p>Pemrograman: Python</p>
+                            <p>Fitur: (Status Drone, Lock target secara otomatis, bisa mengintai musuh)</p>
+                            <p>Deskripsi: Masih tahap mempelajari dengan ardu pilot dan mission planner, 99% GPT</p>
+                        </div>
+                        <button onclick="soonAlert()" class="card-box-button">DEMO</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>‎ </p>
+        <h4>&copy; Copyrigh - nazri.rf.gd</h4>
+    </footer>
+
+    <script>
+        function soonAlert() {
+            alert("Cooming Soon")
+        }
+
+        function openLink(url) {
+            return window.location.href = url
+        }
+
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function textRunning(text) {
+            const target = document.querySelector(".card h2")
+
+            while (true) {
+                target.innerHTML = ''
+                for (let i = 0; i < text.length; i++) {
+                    target.innerHTML += text[i]
+                    await delay(150)
+                }
+                await delay(2500)
+            }
+        }
+
+        textRunning("MOH. NAZRI AINUR RAHMAN")
+
+
+        document.querySelector(".bx-x").style = "display: none;"
+        document.querySelector(".ham-menu").style = "display: none;"
+        
+        const mobileMenu = document.querySelector(".menu-mobile")
+        mobileMenu.addEventListener("click", function() {
+            const iconOpen = document.querySelector(".bx-menu")
+            const iconClose = document.querySelector(".bx-x")
+            const menuMobile = document.querySelector(".ham-menu")
+            if (mobileMenu.getAttribute("open") == 't') {
+                mobileMenu.setAttribute("open", "y")
+                iconOpen.style = "display: none;"
+                iconClose.style = "display: block;"
+                menuMobile.style = "display: block;"
+            } else {
+                mobileMenu.setAttribute("open", "t")
+                iconOpen.style = "display: block;"
+                iconClose.style = "display: none;"
+                menuMobile.style = "display: none;"
+            }
+        })
+    </script>
+</body>
+</html>
