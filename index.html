@@ -3,96 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nazri Website</title>
+    <title>Nazri Portfolio</title>
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="titles"><a href="/">Nazri</a></div>
-        <!-- menu link a css
-        active = menu li a : .active-link
-        nonactive = menu li a : null -->
-        <div class="menu">
-            <ul class="menu-desk">
-                <li><a href="/" class="active-link">Home</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#" onclick="soonAlert()">Github</a></li>
-            </ul>
-            <div class="menu-mobile" open="t">
-                <i class='bxr  bx-x'></i>
-                <i class='bxr  bx-menu'></i>  
-                
-                <div class="ham-menu">
-                    <ul class="">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="#project">Project</a></li>
-                        <li><a href="#" onclick="soonAlert()">Github</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-
     <div class="container">
-        <div class="img-card">
-            <img src="profil.png" alt="Nazri Photo">
-        </div>
-        <div class="name-card">
-            <div class="card">
-                <h3>Hi, My name is</h3>
-                <h2></h2>
-                <h4>Full Stack Developer (Nantinya)</h4>
-            </div>
-        </div>
-        <main>
-            <div class="project">
-                <h3 id="project">Project</h3>
-                <div class="box">
-                    <div class="card-box">
-                        <div>
-                            <h2>Mini Games</h2>
-                            <p>Pemrograman: PHP HTML JS</p>
-                            <p>Fitur: (MANIPULASI, POIN SISTEM)</p>
-                            <p>Deskripsi: Mini games dengan code by chat gpt 80%</p>
+        <div>
+            <nav class="navbar">
+                <div class="titles"><a href="/">Nazri</a></div>
+                <!-- menu link a css
+                active = menu li a : .active-link
+                nonactive = menu li a : null -->
+                <div class="menu">
+                    <ul class="menu-desk">
+                        <li><a href="/" class="active-link">Home</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="https://github.com/FastedNgoding">Github</a></li>
+                    </ul>
+                    <div class="menu-mobile" open="t">
+                        <i class='bxr  bx-x'></i>
+                        <i class='bxr  bx-menu'></i>  
+                        
+                        <div class="ham-menu">
+                            <ul class="">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="#project">Project</a></li>
+                                <li><a href="https://github.com/FastedNgoding">Github</a></li>
+                            </ul>
                         </div>
-                        <button onclick="openLink('https://nazri.byethost7.com/judal')" class="card-box-button">PLAY</button>
-                    </div>
-                    <div class="card-box">
-                        <div>
-                            <h2>Tic Tac Toe Game</h2>
-                            <p>Pemrograman: PHP</p>
-                            <p>Fitur: (Main sendiri, Main dengan teman)</p>
-                            <p>Deskripsi: 95% buatan gw ya, cuman buat heve fun oke!</p>
-                        </div>
-                        <button onclick="openLink('https://nazri.byethost7.com/tic-tac-toe')" class="card-box-button">PLAY</button>
-                    </div>
-                    <div class="card-box">
-                        <div>
-                            <h2>Absensi Laravel 12</h2>
-                            <p>Pemrograman: PHP</p>
-                            <p>Fitur: (QR CODE, GPS, LOGIN ROLE)</p>
-                            <p>Deskripsi: Absensi berbasis laravel dengan QR CODE</p>
-                        </div>
-                        <button onclick="soonAlert()" class="card-box-button">DEMO</button>
-                    </div>
-                    <div class="card-box">
-                        <div>
-                            <h2>DRONE KAMIKAZE</h2>
-                            <p>Pemrograman: Python</p>
-                            <p>Fitur: (Status Drone, Lock target secara otomatis, bisa mengintai musuh)</p>
-                            <p>Deskripsi: Masih tahap mempelajari dengan ardu pilot dan mission planner, 99% GPT</p>
-                        </div>
-                        <button onclick="soonAlert()" class="card-box-button">DEMO</button>
                     </div>
                 </div>
+            </nav>
+        
+            <div class="contents">
+                <div class="img-card">
+                    <img src="profil.png" alt="Nazri Photo">
+                </div>
+                <div class="name-card">
+                    <div class="card">
+                        <h3>Hi, My name is</h3>
+                        <h2></h2>
+                        <h4>Full Stack Developer (Nantinya)</h4>
+                    </div>
+                </div>
+                <main>
+                    <div class="project">
+                        <h3 id="project">Project</h3>
+                        <div class="box">
+                            <div class="card-box">
+                                <div>
+                                    <h2>Mini Games</h2>
+                                    <p>Pemrograman: PHP HTML JS</p>
+                                    <p>Fitur: (MANIPULASI, POIN SISTEM)</p>
+                                    <p>Deskripsi: Mini games dengan code by chat gpt 80%</p>
+                                </div>
+                                <button onclick="openLink('https://nazri.rf.gd/judal')" class="card-box-button">PLAY</button>
+                            </div>
+                            <div class="card-box">
+                                <div>
+                                    <h2>Tic Tac Toe Game</h2>
+                                    <p>Pemrograman: PHP</p>
+                                    <p>Fitur: (Main sendiri, Main dengan teman)</p>
+                                    <p>Deskripsi: 95% buatan gw ya, cuman buat heve fun oke!</p>
+                                </div>
+                                <button onclick="openLink('https://nazri.rf.gd/tic-tac-toe')" class="card-box-button">PLAY</button>
+                            </div>
+                            <div class="card-box">
+                                <div>
+                                    <h2>Absensi Laravel 12</h2>
+                                    <p>Pemrograman: PHP</p>
+                                    <p>Fitur: (QR CODE, GPS, LOGIN ROLE)</p>
+                                    <p>Deskripsi: Absensi berbasis laravel dengan QR CODE</p>
+                                </div>
+                                <button onclick="soonAlert()" class="card-box-button">DEMO</button>
+                            </div>
+                            <div class="card-box">
+                                <div>
+                                    <h2>DRONE KAMIKAZE</h2>
+                                    <p>Pemrograman: Python</p>
+                                    <p>Fitur: (Status Drone, Lock target secara otomatis, bisa mengintai musuh)</p>
+                                    <p>Deskripsi: Masih tahap mempelajari dengan ardu pilot dan mission planner, 99% GPT</p>
+                                </div>
+                                <button onclick="soonAlert()" class="card-box-button">DEMO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="robot">
+                        <iframe title="robot" src="https://fastedngoding.github.io/threejs-robot-embed/models/" height="300" frameborder="0"></iframe>
+                    </div>
+                    <div class="contact">
+                        <h3>Contact</h3>
+                        <div class="card-box">
+                            <div class="contact-text">
+                                <div>
+                                    <i class='bxr bx-envelope'></i> 
+                                </div>
+                                <div>
+                                    <a href="mailto:nazriainurrahman@gmail.com">nazriainurrahman@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-text">
+                                <div>
+                                    <i class='bx bxl-github'></i>
+                                </div>
+                                <div>
+                                    <a href="https://github.com/FastedNgoding">Fasted Ngoding</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
             </div>
-        </main>
+        </div>
+        <footer>
+            <h4>&copy; Copyrigh - nazri.developer.li</h4>
+        </footer>
     </div>
-    <footer>
-        <p>‎ </p>
-        <h4>&copy; Copyrigh - nazri.rf.gd</h4>
-    </footer>
 
     <script>
         function soonAlert() {
