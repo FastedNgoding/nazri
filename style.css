@@ -1,3 +1,10 @@
+:root {
+    --color-1: #090040;
+    --color-2: #471396;
+    --color-3: #B13BFF;
+    --color-4: #FFCC00;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -7,7 +14,14 @@ body {
     padding: 0;
     min-height: 100vh;
     font-family: sans-serif;
-    background-color: #471396;
+    background-color: var(--color-2);
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 button {
@@ -17,7 +31,7 @@ button {
 .navbar {
     display: flex;
     height: 50px;
-    background-color: #090040;
+    background-color: var(--color-1);
     justify-content: space-between;
     align-items: center;
     padding-left: 40px;
@@ -47,7 +61,7 @@ a {
 .menu-desk li a:hover {
     transform: translateY(-2px);
     font-weight: 530;
-    color: #FFCC00;
+    color: var(--color-4);
 }
 
 .titles {
@@ -59,7 +73,7 @@ a {
 }
 
 .titles a {
-    color: #FFCC00;
+    color: var(--color-4);
     transition: all 200ms ease;
 }
 
@@ -81,7 +95,7 @@ a {
 }
 
 .ham-menu {
-    background-color: #B13BFF;
+    background-color: var(--color-3);
     position: absolute;
     right: 5%;
     width: 75px;
@@ -103,7 +117,7 @@ a {
     display: none;
 }
 
-.container {
+.contents {
     padding-top: 70px;
     width: 100%;
     justify-content: center;
@@ -119,7 +133,7 @@ a {
 }
 
 .active-link {
-    color: #FFCC00;
+    color: var(--color-4);
 }
 
 .name-card {
@@ -133,7 +147,7 @@ a {
     border-radius: 20px;
     width: 400px;
     text-align: center;
-    background: #090040fa;
+    background: var(--color-1);
     /* background: rgba(0, 0, 0, 0.163); */
     /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); */
     box-shadow: 10px 5px 10px 0 rgba(0, 0, 0, 0.3);
@@ -145,27 +159,32 @@ a {
     margin-bottom: -20px;
     font-weight: 300;
     font-size: 1rem;
-    color: #B13BFF;
+    color: var(--color-3);
 }
 
 .card h2 {
     margin-bottom: -20px;
-    color: #FFCC00;
+    color: var(--color-4);
     font-weight: 900;
     font-size: 1.3rem;
 }
 
 .card h4 {
-    color: #B13BFF;
+    color: var(--color-3);
     font-weight: 800;
 }
 
 main {
-    margin-top: 50px;
     display: flex;
+    flex-direction: column;
+    margin-top: 10%;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+}
+
+main h3 {
+    color: var(--color-4);
 }
 
 .project {
@@ -173,7 +192,6 @@ main {
 }
 
 .project h3 {
-    margin-top: 40px;
     text-align: center;
 }
 
@@ -200,7 +218,7 @@ main {
     font-size: 1.1rem;
     text-align: center;
     font-weight: 700;
-    color: #FFCC00;
+    color: var(--color-4);
 }
 
 .card-box p {
@@ -212,20 +230,60 @@ main {
 .card-box button {
     width: 100%;
     height: 30px;
-    background-color: #FFCC00;
+    background-color: var(--color-4);
     border-radius: 15px;
 }
 
 footer {
-    background-color: #090040;
+    display: flex;
+    background-color: var(--color-1);
     text-align: center;
-    height: 50px;
+    justify-content: center;
     align-items: center;
+    height: 40px;
     color: aliceblue;
 }
 
-footer h4 {
-    margin-top: -20px;
+.robot {
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact .card-box {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+}
+
+.contact .card-box div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    min-height: 10px;
+}
+
+.contact-text .bxr,.contact-text .bx {
+    color: var(--color-4);
+}
+
+.contact-text .bx {
+    font-size: 2rem;
+}
+
+.contact-text a {
+    color: white;
+    font-weight: bold;
+}
+
+.contact-text a:hover {
+    color: #FFCC00;
 }
 
 @media screen and (max-width: 1000px) {
