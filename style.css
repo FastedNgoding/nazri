@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 :root {
     --color-1: #090040;
     --color-2: #471396;
@@ -15,6 +17,7 @@ body {
     min-height: 100vh;
     font-family: sans-serif;
     background-color: var(--color-2);
+    font-family: "Inter", sans-serif;
 }
 
 .container {
@@ -39,6 +42,7 @@ button {
     color: white;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 ul {
@@ -107,6 +111,8 @@ a {
 
 .ham-menu a {
     font-size: 1.2rem;
+    color: var(--color-2);
+    font-weight: 600;
 }
 
 .ham-menu ul {
@@ -181,10 +187,16 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    padding: 10px;
 }
 
 main h3 {
     color: var(--color-4);
+}
+
+.title {
+    text-align: center;
+    font-family: "Roboto Mono", sans-serif;
 }
 
 .project {
@@ -192,17 +204,28 @@ main h3 {
 }
 
 .project h3 {
-    text-align: center;
+    margin-top: 10%;
 }
 
 .box {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
 
-.card-box {
+.box .card-box {
     width: 200px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in 200ms;
+}
+
+.box .card-box:hover {
+    box-shadow: 10px 5px 10px 0 var(--color-4);
+}
+
+.card-box {
     border-radius: 20px;
     background: rgba(0, 0, 0, 0.163);
     padding: 20px;
@@ -210,39 +233,89 @@ main h3 {
     align-items: center;
 }
 
-.card-box div {
-    min-height: 220px;
+.card-box .main-card {
+    flex-direction: column;
+    display: flex;
+    /* min-height: 220px; */
 }
 
-.card-box h2 {
+.card-box .main-card h2 {
     font-size: 1.1rem;
     text-align: center;
     font-weight: 700;
     color: var(--color-4);
 }
 
-.card-box p {
+.card-box .main-card p {
     font-size: smaller;
     margin-top: -5px;
     font-weight: 200;
 }
 
-.card-box button {
+.card-box .card-box-button {
     width: 100%;
     height: 30px;
     background-color: var(--color-4);
     border-radius: 15px;
+    transition: all ease-in 200ms;
 }
 
-footer {
-    display: flex;
-    background-color: var(--color-1);
-    text-align: center;
+.card-box .card-box-button:hover {
+    transform: translateY(-3px);
+}
+
+.skills {
     justify-content: center;
     align-items: center;
-    height: 40px;
-    color: aliceblue;
+    margin-top: 10%;
+    width: 90%;
 }
+
+.skill .bx {
+    font-size: 3rem;
+}
+
+.skill {
+    align-items: center;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.range {
+    position: relative;
+    background-color: var(--color-1);
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.range-fill {
+    background-color: var(--color-4);
+    height: 100%;
+    border-radius: 20px;
+    text-align: right;
+}
+
+.label-range {
+    margin-right: 5px;
+    color: white;
+    font-size: 1rem;
+}
+
+.icon-html {color: red;}
+.icon-css  {color: blue;}
+.icon-js   {color: yellow;}
+.icon-php  {color: white;}
+
+
+/* skills customize */
+#html5 {width: 99%;}
+#css3  {width: 88%;}
+#js    {width: 50%;}
+#php   {width: 85%;}
+
 
 .robot {
     margin-top: 10%;
@@ -252,43 +325,141 @@ footer {
 }
 
 .contact {
-    text-align: center;
+    margin-top: 10%;
+    align-items: center;
+    width: 90%;
+}
+
+.contact-container {
+    justify-content: center;
+    align-items: stretch;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .contact .card-box {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: auto;
+    width: 100%;
 }
 
-.contact .card-box div {
+.contact .contact-information > div:first-child {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 1.6rem;
+    padding: 10px;
+    color: var(--color-4);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact-info-lt {
     display: flex;
-    gap: 5px;
     align-items: center;
-    min-height: 10px;
+    background-color: var(--color-1);
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 28px;
 }
 
-.contact-text .bxr,.contact-text .bx {
+.contact-info-lt .bxr {
+    color: #FFCC00;
+    margin-right: 10px;
+}
+
+.contact-info-lt a {
+    color: var(--color-3);
+    font-size: 1rem;
+    font-weight: 500;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    font-family: "Poppins";
+    transition: color ease-in .2s;
+}
+
+.contact-info-lt a:hover {
     color: var(--color-4);
 }
 
-.contact-text .bx {
-    font-size: 2rem;
+.message-group {
+    margin-bottom: 10px;
 }
 
-.contact-text a {
-    color: white;
-    font-weight: bold;
+.message-group input {
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    padding-left: 10px;
+    background: var(--color-1);
+    color: var(--color-4);
 }
 
-.contact-text a:hover {
-    color: #FFCC00;
+.message-group textarea {
+    width: 100%;
+    border-radius: 15px;
+    background: var(--color-1);
+    padding: 10px;
+    color: var(--color-4);
+    height: 80px;
+}
+
+.message-group button {
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    background-color: var(--color-4);
+    transition: all ease-in 100ms;
+}
+
+.message-group button:hover {
+    transform: translateY(2px);
+}
+
+.text-3d {
+    margin-top: 5%;
+}
+
+footer {
+    background-color: var(--color-1);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    color: var(--color-4);
+}
+
+.info-footer {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: auto;
+}
+
+.info-footer .bx {
+    color: #B13BFF;
+    font-size: 1.5rem;
+}
+
+.info-footer a {
+    margin-left: 5px;
+    color: var(--color-3);
+}
+
+.info-footer a:hover {
+    color: var(--color-4);
 }
 
 @media screen and (max-width: 1000px) {
     .box {
         grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contact-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
     }
 }
 
@@ -339,19 +510,26 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .card-box {
+    .box .card-box {
         width: auto;
     }
 
-    .card-box div {
+    .card-box .main-card {
         min-height: unset;
     }
 
-    .card-box p {
+    .card-box .main-card p {
         margin-top: 1px;
     }
 
     img {
         max-width: 100%;
+    }
+
+    .contact-info-lt .bxr {
+        font-size: 1.5rem;
+    }
+    .contact-info-lt a {
+        font-size: .8rem;
     }
 }
