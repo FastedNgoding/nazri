@@ -1,4 +1,5 @@
-<!-- license mit -->
+<!-- MOH. NAZRI AINUR RAHMAN -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +22,8 @@
                     <ul class="menu-desk">
                         <li><a href="/" class="active-link">Home</a></li>
                         <li><a href="#project">Project</a></li>
-                        <li><a href="https://github.com/FastedNgoding">Github</a></li>
+                        <li><a href="#skill">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     <div class="menu-mobile" open="t">
                         <i class='bxr  bx-x'></i>
@@ -31,7 +33,8 @@
                             <ul class="">
                                 <li><a href="/">Home</a></li>
                                 <li><a href="#project">Project</a></li>
-                                <li><a href="https://github.com/FastedNgoding">Github</a></li>
+                                <li><a href="#skill">Skills</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -49,30 +52,31 @@
                         <h4>Full Stack Developer (Nantinya)</h4>
                     </div>
                 </div>
+
                 <main>
-                    <div class="project">
-                        <h3 id="project">Project</h3>
+                    <div class="project" id="project">
+                        <h3 class="title">Project</h3>
                         <div class="box">
                             <div class="card-box">
-                                <div>
+                                <div class="main-card">
                                     <h2>Mini Games</h2>
                                     <p>Pemrograman: PHP HTML JS</p>
                                     <p>Fitur: (MANIPULASI, POIN SISTEM)</p>
                                     <p>Deskripsi: Mini games dengan code by chat gpt 80%</p>
                                 </div>
-                                <button onclick="openLink('https://nazri.rf.gd/judal')" class="card-box-button">PLAY</button>
+                                <button onclick="openLink('https://nazri.byethost7.com/judal')" class="card-box-button">PLAY</button>
                             </div>
                             <div class="card-box">
-                                <div>
+                                <div class="main-card">
                                     <h2>Tic Tac Toe Game</h2>
                                     <p>Pemrograman: PHP</p>
                                     <p>Fitur: (Main sendiri, Main dengan teman)</p>
                                     <p>Deskripsi: 95% buatan gw ya, cuman buat heve fun oke!</p>
                                 </div>
-                                <button onclick="openLink('https://nazri.rf.gd/tic-tac-toe')" class="card-box-button">PLAY</button>
+                                <button onclick="openLink('https://nazri.byethost7.com/tic-tac-toe')" class="card-box-button">PLAY</button>
                             </div>
                             <div class="card-box">
-                                <div>
+                                <div class="main-card">
                                     <h2>Absensi Laravel 12</h2>
                                     <p>Pemrograman: PHP</p>
                                     <p>Fitur: (QR CODE, GPS, LOGIN ROLE)</p>
@@ -81,7 +85,7 @@
                                 <button onclick="soonAlert()" class="card-box-button">DEMO</button>
                             </div>
                             <div class="card-box">
-                                <div>
+                                <div class="main-card">
                                     <h2>DRONE KAMIKAZE</h2>
                                     <p>Pemrograman: Python</p>
                                     <p>Fitur: (Status Drone, Lock target secara otomatis, bisa mengintai musuh)</p>
@@ -89,37 +93,124 @@
                                 </div>
                                 <button onclick="soonAlert()" class="card-box-button">DEMO</button>
                             </div>
+                            <div class="card-box">
+                                <div class="main-card">
+                                    <h2>3d text embed</h2>
+                                    <p>Pemrograman: HTML and ThreeJS</p>
+                                    <p>Fitur: (Dynamic 3D text with bevel and lighting, Easy to embed anywhere via iframe), DLL.</p>
+                                    <p>Deskripsi: 98% GPT</p>
+                                </div>
+                                <button onclick="openLink('https://fastedngoding.github.io/3d-text-embed/')" class="card-box-button">VISIT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills" id="skill">
+                        <h3 class="title">My Skills</h3>
+                        <div class="card-box">
+                            <div class="skill">
+                                <i class='bx bxl-html5 icon-html'></i>
+                                <div class="range">
+                                    <div class="range-fill" id="html5">
+                                        <h1 class="label-range">99%</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <i class='bx bxl-css3 icon-css'></i>
+                                <div class="range">
+                                    <div class="range-fill" id="css3">
+                                        <h1 class="label-range">88%</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <i class='bx bxl-javascript icon-js'></i>
+                                <div class="range">
+                                    <div class="range-fill" id="js">
+                                        <h1 class="label-range">50%</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <i class='bx bxl-php icon-php'></i>
+                                <div class="range">
+                                    <div class="range-fill" id="php">
+                                        <h1 class="label-range">85%</h1>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="robot">
-                        <iframe title="robot" src="https://fastedngoding.github.io/threejs-robot-embed/models/" height="300" frameborder="0"></iframe>
+                        <!-- <iframe title="robot" src="http://127.0.0.1:60569/models/robot.html" height="300" frameborder="0"></iframe> -->
                     </div>
-                    <div class="contact">
-                        <h3>Contact</h3>
-                        <div class="card-box">
-                            <div class="contact-text">
-                                <div>
-                                    <i class='bxr bx-envelope'></i> 
-                                </div>
-                                <div>
-                                    <a href="mailto:nazriainurrahman@gmail.com">nazriainurrahman@gmail.com</a>
+                    <div class="contact" id="contact">
+                        <h3 class="title">Contact</h3>
+                        <div class="contact-container">
+                            <div class="card-box">
+                                <div class="contact-information">
+                                    <div>Contact Information</div>
+                                    <div class="my-contact-info">
+                                        <div class="contact-info-lt">
+                                            <i class='bxr bx-location'></i> 
+                                            <a href="https://www.google.com/maps/place/Jawa+Timur/@-6.914709,113.5832404,8z/" rel="noopener" target="_blank">Jawa Timur, Indonesia</a>
+                                        </div>
+                                        <div class="contact-info-lt">
+                                            <i class='bxr  bx-envelope'></i> 
+                                            <a href="mailto:nazriainurrahman@gmail.com" target="_blank">nazriainurrahman@gmail.com</a>
+                                        </div>
+                                        <div class="contact-info-lt">
+                                            <i class='bxr  bx-phone'></i> 
+                                            <a href="https://wa.me/6285955267315" rel="noopener" target="_blank">+62 859-5526-7315</a>
+                                        </div>
+                                        <div class="contact-info-lt">
+                                            <i class='bxr  bx-link'  ></i> 
+                                            <a href="https://nazri.developer.li">nazri.developer.li</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="contact-text">
-                                <div>
-                                    <i class='bx bxl-github'></i>
-                                </div>
-                                <div>
-                                    <a href="https://github.com/FastedNgoding">Fasted Ngoding</a>
+                            <div class="card-box">
+                                <div class="contact-information">
+                                    <div>Send Message</div>
+                                    <div class="contact-message">
+                                        <div class="message-group">
+                                            <input type="text" name="cttName" placeholder="Your Name" required>
+                                        </div>
+                                        <div class="message-group">
+                                            <input type="email" name="cttEmail" placeholder="Your Email" required>
+                                        </div>
+                                        <div class="message-group">
+                                            <input type="text" name="cttSubject" placeholder="Subject" required>
+                                        </div>
+                                        <div class="message-group">
+                                            <textarea name="cttMessage" id="" placeholder="Message" required></textarea>
+                                        </div>
+                                        <div class="message-group">
+                                            <button onclick="sendMail('nazriainurrahman@gmail.com')">Send Message</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="text-3d">
+                        <!-- <iframe title="nazri-3d-text" src="https://fastedngoding.github.io/3d-text-embed/src/models.html?text=Thank You&transparent=true&color=FFCC00&animation=idle" height="250px" width="300px" frameborder="0"></iframe> -->
+                         <iframe title="PC coding" src="https://terong333.github.io/gmg/" frameborder="0" width="700px" height="500px" scrolling="yes"></iframe>
                     </div>
                 </main>
             </div>
         </div>
         <footer>
-            <h4>&copy; Copyrigh - nazri.developer.li</h4>
+            <div>
+                <div class="info-footer">
+                    <i class='bx bxl-github'></i>
+                    <a href="https://github.com/FastedNgoding">My Github</a>
+                </div>
+            </div>
+            <div>
+                <h4>&copy; Copyrigh - nazri.developer.li</h4>
+            </div>
         </footer>
     </div>
 
@@ -134,6 +225,17 @@
 
         function delay(ms) {
             return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        function sendMail(email) {
+            const subject = document.getElementsByName("cttSubject")[0].value
+            const message = document.getElementsByName("cttMessage")[0].value
+            const name = document.getElementsByName("cttName")[0].value
+            const mailC = document.getElementsByName("cttEmail")[0].value
+            const templateM = "Hello nazri, %0AMy Name is " + name  + "%0A%0AMessage: %0A" + message + "%0A%0A%0ABest regards,%0A" + mailC 
+            const sendToMail = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${templateM}`
+
+            document.location.href = sendToMail
         }
 
         async function textRunning(text) {
