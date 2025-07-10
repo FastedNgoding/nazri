@@ -1,5 +1,3 @@
-<!-- MOH. NAZRI AINUR RAHMAN -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="up-scroll"></div>
+
     <div class="container">
         <div>
             <nav class="navbar">
@@ -194,9 +194,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text-3d">
+                    <div class="pc3d">
                         <!-- <iframe title="nazri-3d-text" src="https://fastedngoding.github.io/3d-text-embed/src/models.html?text=Thank You&transparent=true&color=FFCC00&animation=idle" height="250px" width="300px" frameborder="0"></iframe> -->
+                         <button class="scroll-up" onclick="openLink('#up-scroll')">➤</button>
                          <iframe title="PC coding" src="https://terong333.github.io/gmg/" frameborder="0" width="700px" height="500px" scrolling="yes"></iframe>
+<!--                          <iframe title="PC coding" src="http://127.0.0.1:60500/models/pc.html" frameborder="0" scrolling="yes"></iframe> -->
+                         <button class="scroll-down" onclick="openLink('#down-scroll')">➤</button>
                     </div>
                 </main>
             </div>
@@ -213,6 +216,8 @@
             </div>
         </footer>
     </div>
+
+    <div id="down-scroll"></div>
 
     <script>
         function soonAlert() {
